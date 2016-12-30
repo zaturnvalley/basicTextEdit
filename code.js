@@ -5,11 +5,12 @@
     // Get previous text from localStorage
     getText();
 
-    // Scrolls to bottom
-    updateScroll();
-
     // Set div's html to text
     div.innerHTML = getText();
+    
+
+    // Scrolls to bottom
+    updateScroll();
     
     // Scrolls to bottom of container
     function updateScroll() {
