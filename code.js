@@ -1,9 +1,18 @@
   window.onload = function(){
     // Grab Div
     var div = document.getElementById('text');
+
+    // Grab container
+    var contain = document.getElementById('container');
+
+    // Get previous text from localStorage
     getText();
+
+    // Set div's html to text
     div.innerHTML = getText();
-    console.log(div)
+    
+    // Scrolls to bottom 
+    div.scrollTop = div.scrollHeight;
 
     // On Keypress, add that key to div
     document.addEventListener('keydown',function(e){
