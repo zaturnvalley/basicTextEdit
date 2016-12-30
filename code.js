@@ -11,7 +11,7 @@
 
     // Scrolls to bottom
     updateScroll();
-    
+
     // Scrolls to bottom of container
     function updateScroll() {
       // Grab container
@@ -42,7 +42,8 @@
         } else if (e.key == 'CapsLock') {
           return;
         } else if (e.key == 'Backspace') {
-          div.innerHTML = div.innerHTML.substring(0, div.innerHTML.length);
+          var end = div.innerHTML.length;
+          div.innerHTML = div.innerHTML.substring(0, end - 1);
           updateScroll();
           return;
         }
