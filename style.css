@@ -35,7 +35,11 @@
   background-color: #45c0c7 !important;
   color: white;
 }
-
+#hidden {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
 .blinking-cursor {
   font-weight: 100;
   font-size: 20px;
