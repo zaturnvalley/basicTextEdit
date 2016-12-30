@@ -13,9 +13,10 @@
 }
 #container {
   height: 400px;
-  width: 100%;
+  width: 70%;
   overflow: scroll;
   cursor: text;
+  word-wrap: break-word;
 }
 #button {
   border: 2px solid #45c0c7;
