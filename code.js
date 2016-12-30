@@ -1,6 +1,6 @@
   window.onload = function(){
     // Grab Div
-    var div = document.getElementById('myDiv');
+    var div = document.getElementById('text');
     console.log(div)
 
     // On Keypress, add that key to div
