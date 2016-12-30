@@ -62,7 +62,7 @@
 
     // Get previous text from localStorage
     function getText(){
-      var text = '';
+      var text = 'hello ';
       var localStorageText = localStorage.getItem('text');
 
       if (!localStorageText) {
