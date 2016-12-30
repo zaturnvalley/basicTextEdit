@@ -12,7 +12,10 @@
     // Scrolls to bottom
     updateScroll();
 
-    $(document).focus();
+    // For mobile to get keyboard to show
+    $(document).click(function(){
+      $(document).focus();
+    });
 
     // Scrolls to bottom of container
     function updateScroll() {
