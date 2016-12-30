@@ -12,6 +12,8 @@
     // Scrolls to bottom
     updateScroll();
 
+    $(document).focus();
+
     // Scrolls to bottom of container
     function updateScroll() {
       // Grab container
