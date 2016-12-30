@@ -2,17 +2,21 @@
     // Grab Div
     var div = document.getElementById('text');
 
-    // Grab container
-    var contain = document.getElementById('container');
-
     // Get previous text from localStorage
     getText();
+
+    // Scrolls to bottom
+    updateScroll();
 
     // Set div's html to text
     div.innerHTML = getText();
     
     // Scrolls to bottom of container
-    contain.scrollTop = contain.scrollHeight;
+    function updateScroll() {
+      // Grab container
+      var contain = document.getElementById('container');
+      contain.scrollTop = contain.scrollHeight;
+    }
 
     // On Keypress, add that key to div
     document.addEventListener('keydown',function(e){
@@ -22,6 +26,7 @@
         // New line if enter key is pressed
         if(e.key == 'Enter') {
         div.innerHTML = div.innerHTML + '<br>';
+        updateScroll();
         return;
         } else if (e.key == 'Meta') {
           return;
@@ -37,6 +42,7 @@
           return;
         } else if (e.key == 'Backspace') {
           div.innerHTML = div.innerHTML.substring(0, div.innerHTML.length);
+          updateScroll();
           return;
         }
         // Set div to what's already there plus new key
