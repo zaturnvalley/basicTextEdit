@@ -11,8 +11,8 @@
     // Set div's html to text
     div.innerHTML = getText();
     
-    // Scrolls to bottom 
-    div.scrollTop = div.scrollHeight;
+    // Scrolls to bottom of container
+    contain.scrollTop = contain.scrollHeight;
 
     // On Keypress, add that key to div
     document.addEventListener('keydown',function(e){
